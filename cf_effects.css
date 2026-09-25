@@ -65,6 +65,7 @@ div#cube {
    position: absolute;
    width: 400px;
    height: 400px;
+   backface-visibility: hidden;
 }
 #cube_front {
    transform: translateZ(-50px);
@@ -84,12 +85,17 @@ div#cube {
 /* Text Animation Styles - Target 1: cube_bottom h1 */
 #cube_bottom h1 {
    color: rgb(255, 255, 255);
-   animation: glowPulse 3s ease-in-out infinite;
 }
 /* Text Animation Styles - Target 2: cube_top p */
 #cube_top p {
    color: rgb(255, 255, 255);
-   animation: glowPulse 3.5s ease-in-out infinite;
+}
+.glow-text {
+   display: inline-block;
+   animation: glowPulse 3s ease-in-out infinite;
+}
+#cube_top .glow-text {
+   animation-duration: 3.5s;
 }
 @keyframes glowPulse {
    0%, 100% {
