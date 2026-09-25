@@ -53,19 +53,20 @@ section aside h1 {
    transform: rotateY(-25deg);
 }
 /* Cube Styles */
+#center {
+   perspective: 450px;
+}
 div#cube {
    position: relative;
    margin: 180px auto 150px auto;
    width: 400px;
    height: 400px;
-   perspective: 450px;
    transform-style: preserve-3d;
 }
 .cube_face {
    position: absolute;
    width: 400px;
    height: 400px;
-   backface-visibility: hidden;
 }
 #cube_front {
    transform: translateZ(-50px);
