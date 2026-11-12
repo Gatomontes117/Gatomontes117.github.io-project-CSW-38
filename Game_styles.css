@@ -1,6 +1,0 @@
-/* Mouse Bird game styles - scoped to the canvas only */
-
-canvas#myCanvas {
-  border: 1px solid #0a3cda;
-  box-sizing: border-box;
-}
