@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Space Defender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Side graphics: add your <img> tags here (Step 3+) -->
+    <div id="saucers">
+        <!-- <img src="images/saucer1.png" alt="Flying saucer"> -->
+    </div>
+
+    <h1>SPACE DEFENDER</h1>
+
+    <!-- NEW: header text with your name -->
+    <p class="byline">Created by Guillermo Leon</p>
+
+    <!-- NEW: lore / page text -->
+    <p class="lore">
+        Aliens invade this galexy, exterminate them.
+    </p>
+
+    <div id="scoreboard">SCORE: <span id="score">0</span> | LIVES: <span id="lives">3</span></div>
+    <canvas id="gameCanvas" width="540" height="400"></canvas>
+    <button id="playAgain" disabled>Play</button>
+
+    <!-- NEW: controls box (replaces the old one-line instructions) -->
+    <div class="instructions">
+        <h2>Controls</h2>
+        <ul>
+            <li><kbd>←</kbd> <kbd>→</kbd> Arrow keys move your starship left and right</li>
+            <li><kbd>Space</kbd> Press the spacebar to fire torpedoes</li>
+        </ul>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
