@@ -42,7 +42,6 @@ Code, Compile, Run and Debug online from anywhere in world.
     outline-offset: 4px;
   }
 
-  /* Hover effects only on devices that actually hover */
   @media (hover: hover) {
     .launch-btn:hover {
       background: #ffd23f;
@@ -52,7 +51,6 @@ Code, Compile, Run and Debug online from anywhere in world.
     }
   }
 
-  /* Must come after the hover rule so it wins while pressed */
   .launch-btn:active {
     transform: scale(0.95);
     background: #e6b800;
@@ -65,8 +63,7 @@ Code, Compile, Run and Debug online from anywhere in world.
   <button class="launch-btn" id="launchBtn">Launch game</button>
 
 <script>
-  // Change this to your game's URL or file path
-  const GAME_URL = "https://example.com/my-game";
+  const GAME_URL = "https://example.com/game117";
 
   document.getElementById("launchBtn").addEventListener("click", () => {
     window.open(GAME_URL, "_blank", "noopener");
